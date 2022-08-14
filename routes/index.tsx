@@ -11,11 +11,24 @@ export default function Home() {
         height="100px"
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
-      <p class={tw`my-6`}>
-        Welcome to `fresh`. Try update this message in the ./routes/index.tsx
-        file, and refresh.
-      </p>
       <Counter start={3} />
+      <div class={tw`mt-5`}>
+        <p>Pages</p>
+        <ul class={tw`list-disc`}>
+          <li>
+            <a href="/about">about</a>
+          </li>
+          <li>
+            <a href="/search">search</a>
+          </li>
+          <li>
+            <a href="/countdown">countdown</a>
+          </li>
+          <li>
+            <a href="/lemon">lemon</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
